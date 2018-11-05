@@ -2,18 +2,33 @@
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 	"name": "redtt",
 	"patterns": [
-		{
-			"include": "#keywords"
-		},
-		{
-			"include": "#strings"
-		}
+		{ "include": "#comment" },
+		{ "include": "#keywords" },
+		{ "include": "#strings" }
 	],
 	"repository": {
+		"comment": {
+			"patterns": [
+			  { "include": "#comment-block" },
+			  { "include": "#comment-line" }
+			]
+	    },
+		"comment-block": {
+			"begin": "/-",
+			"end": "-/",
+			"name": "comment.block",
+			"patterns": [
+			  { "include": "#comment-block" }
+			]
+		},
+		"comment-line": {
+			"match": "(--).*$",
+			"name": "comment.line"
+	    },
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.redtt",
-				"match": "\\b(V|in|with|where|begin|end|let|dim|elim|fst|snd|coe|com|pair|comp|fun|hcom|vproj|vin|lam|refl|pre|kan|type|data|opaque|def|meta|normalize|print|public|private|import|quit)\\b"
+				"match": "\\b(V|in|with|where|begin|end|let|dim|elim|fst|snd|coe|com|pair|comp|fun|hcom|vproj|vin|lam|refl|pre|kan|type|𝕀|data|opaque|def|meta|normalize|print|public|private|import|quit)\\b"
 			}]
 		},
 		"strings": {

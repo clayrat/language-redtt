@@ -2,7 +2,7 @@
     "name": "redtt",
     "displayName": "language-redtt",
     "description": "Syntax highlighting for redtt",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "publisher": "agryzlov",
     "author": {
         "email": "alex.gryzlov@gmail.com",
@@ -20,16 +20,25 @@
         "Programming Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "redtt",
-            "aliases": ["redtt", "redtt"],
-            "extensions": [".red"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "redtt",
-            "scopeName": "source.redtt",
-            "path": "./syntaxes/redtt.tmLanguage.json"
-        }]
+        "languages": [
+            {
+                "id": "redtt",
+                "aliases": [
+                    "redtt",
+                    "redtt"
+                ],
+                "extensions": [
+                    ".red"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "redtt",
+                "scopeName": "source.redtt",
+                "path": "./syntaxes/redtt.tmLanguage.json"
+            }
+        ]
     }
 }

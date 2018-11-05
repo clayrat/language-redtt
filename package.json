@@ -1,0 +1,35 @@
+{
+    "name": "redtt",
+    "displayName": "language-redtt",
+    "description": "Syntax highlighting for redtt",
+    "version": "0.0.1",
+    "publisher": "agryzlov",
+    "author": {
+        "email": "alex.gryzlov@gmail.com",
+        "name": "Alex Gryzlov",
+        "url": "https://github.com/clayrat"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/clayrat/language-redtt"
+    },
+    "engines": {
+        "vscode": "^1.28.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "redtt",
+            "aliases": ["redtt", "redtt"],
+            "extensions": [".red"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "redtt",
+            "scopeName": "source.redtt",
+            "path": "./syntaxes/redtt.tmLanguage.json"
+        }]
+    }
+}

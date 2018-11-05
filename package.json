@@ -2,7 +2,7 @@
     "name": "redtt",
     "displayName": "language-redtt",
     "description": "Syntax highlighting for redtt",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "publisher": "agryzlov",
     "author": {
         "email": "alex.gryzlov@gmail.com",

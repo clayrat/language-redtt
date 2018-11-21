@@ -28,7 +28,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.redtt",
-				"match": "\\b(V|in|with|where|begin|end|let|dim|elim|fst|snd|coe|com|pair|comp|fun|hcom|vproj|vin|lam|refl|pre|kan|type|𝕀|data|opaque|def|meta|normalize|print|public|private|import|quit)\\b"
+				"match": "\\b(V|in|with|where|begin|end|let|dim|elim|fst|snd|coe|com|pair|comp|fun|hcom|vproj|vin|cap|box|lam|refl|pre|kan|type|𝕀|data|opaque|def|meta|normalize|print|public|private|import|quit)\\b"
 			}]
 		},
 		"strings": {
